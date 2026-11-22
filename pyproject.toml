@@ -1,0 +1,17 @@
+[project]
+name = "models-from-scratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ffiirree", email = "ice_qi@163.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
