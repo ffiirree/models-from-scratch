@@ -4,7 +4,7 @@ Architecture notes and hands-on reimplementations of Transformer, GPT, ViT, CLIP
 
 ## Models
 
-- [ ] [Attention Is All You Need](https://arxiv.org/abs/1706.03762), 2017.06
+- [ ] [Transformer](/01_transformer)
 - [ ] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929), 2020/10
 - [ ] [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747), 2022.10
 - [ ] [Diffusion Policy:Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137), 2023.03
