@@ -18,3 +18,9 @@ build-backend = "uv_build"
 
 [tool.uv]
 package = false
+
+[tool.black]
+line-length = 120
+
+[tool.autopep8]
+max_line_length = 120
