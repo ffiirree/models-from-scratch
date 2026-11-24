@@ -4,8 +4,8 @@ Architecture notes and hands-on reimplementations of Transformer, GPT, ViT, CLIP
 
 ## Models
 
-- [ ] [Transformer](/01_transformer)
-- [ ] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929), 2020/10
+- [x] [Transformer](/01_transformer), 2017.06
+- [x] [ViT](/02_vit), 2020.10
 - [ ] [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747), 2022.10
 - [ ] [Diffusion Policy:Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137), 2023.03
 - [ ] [OpenVLA:An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246), 2024.06
