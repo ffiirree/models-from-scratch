@@ -93,7 +93,8 @@ class VisionTransformer(nn.Module):
 
         self.drop = nn.Dropout(dropout_rate)
 
-        self.encoder_blocks = nn.ModuleList([EncoderBlock(embed_dim, num_heads, mlp_ratio) for _ in range(num_blocks)])
+        self.encoder_blocks = nn.ModuleList([EncoderBlock(
+            embed_dim, num_heads, mlp_ratio, dropout_rate=dropout_rate, attention_dropout_rate=dropout_rate) for _ in range(num_blocks)])
 
         self.norm = nn.LayerNorm(embed_dim)
         self.mlp_head = nn.Linear(embed_dim, num_classes)
@@ -110,14 +111,14 @@ class VisionTransformer(nn.Module):
         # position embedding
         x = x + self.pos_embedding  # (batch_size, num_patches + 1, embed_dim)
 
-        self.drop(x)
+        x = self.drop(x)
 
         for block in self.encoder_blocks:
             x = block(x)  # (batch_size, num_patches + 1, embed_dim)
 
         x = self.norm(x)
 
-        x = x[:, 0] if self.classifier == 'token' else x.mean(dim=1)
+        x = x[:, 0] if self.classifier == 'token' else x[:, 1:].mean(dim=1)
         return self.mlp_head(x)
 
 
