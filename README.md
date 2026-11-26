@@ -9,7 +9,7 @@ Architecture notes and hands-on reimplementations of Transformer, GPT, ViT, CLIP
 - [x] [GPT](/03_gpt), 2018.06
 - [ ] [Flow Matching](/04_flow_matching), 2022.10
 - [ ] [Diffusion Policy:Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137), 2023.03
-- [ ] [CLIP](/05_clip), 2021.03
+- [x] [CLIP](/06_clip), 2021.03
 - [ ] SigLIP
 - [ ] DINO
 - [ ] [OpenVLA:An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246), 2024.06
